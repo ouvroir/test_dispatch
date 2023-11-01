@@ -3,6 +3,7 @@ on: [workflow_dispatch, push]
 jobs:
   dispatch_event:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - name: Post dispatch
         run: |
